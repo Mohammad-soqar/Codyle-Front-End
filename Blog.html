@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="description" content="Codyle Blogs">
+    <meta name="keywords" content="Writing, Blog, Blogs">
+    <title>Blogs</title>
+    <link rel="icon" href="Photos/Icons/websiteicon.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7382268700986539"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+   <!-- Nav-bar -->
+ <header>
+        <nav class="nav">
+            <a href="index.html" class="logolink"><img alt="Codyle" src="Photos/Logo.png" height="60px"
+                    draggable="false"></a>
+            <ul class="navGlinks">
+
+                <li class="navlinks"><a href="Events.html">Events</a></li>
+                <li class="navlinks"><a href="Services.html">Services</a></li>
+                <li class="navlinks"><a href="Roadmaps.html">RoadMaps</a></li>
+                <li class="navlinks"><a href="Blog.html">Blogs</a></li>
+                <li class="navlinks"><a href="CSC.html">CSC</a></li>
+                <li class="navlinks"><a href="AboutUs.html">About us</a></li>
+
+            </ul>
+
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+                <ul id="mobile-menu" class="mobile-menu">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Roadmaps.html">RoadMaps</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <script src="site.js"></script>
+    </header>
+  <!-- Nav-bar -->
+
+    <!-----------------------Welcome----------------------------->
+    <section class="welcome">
+
+        <div class="welcomegrid">
+            <img alt="Blog Page" class="weclomephoto" src="Photos/welcomeBlogs2.png" draggable="false">
+            <div class="textandstartbutton">
+                <h1>Blogs</h1>
+                <p class="welcometext">Our blog content is about new technologies, News, Problem-solving and other
+                    things that we as CODYLE family recommend</p>
+
+            </div>
+    </section>
+    <!-----------------------blogs----------------------------->
+    <section class="BlogSection">
+
+        <div class="blogBox">
+
+            <a asp-action="BlogDetails" asp-route-id="@blog.Id">
+                <div class="blog right">
+                    <img alt="@blog.Title" src="Photos/blogs/-UbLpLawtEG71qP298GB3g 1.png" height="200"
+                        draggable="false">
+                    <p>Date</p>
+                    <h3 class="show-read-more">Title</h3>
+                    <p style="color: #ffffff;">READ MORE</p>
+                </div>
+            </a>
+
+            <a asp-action="BlogDetails" asp-route-id="@blog.Id">
+                <div class="blog right">
+                    <img alt="@blog.Title" src="Photos/blogs/-UbLpLawtEG71qP298GB3g 1.png" height="200"
+                        draggable="false">
+                    <p>Date</p>
+                    <h3 class="show-read-more">Title</h3>
+                    <p style="color: #ffffff;">READ MORE</p>
+                </div>
+            </a>
+
+            <a asp-action="BlogDetails" asp-route-id="@blog.Id">
+                <div class="blog right">
+                    <img alt="@blog.Title" src="Photos/blogs/-UbLpLawtEG71qP298GB3g 1.png" height="200"
+                        draggable="false">
+                    <p>Date</p>
+                    <h3 class="show-read-more">Title</h3>
+                    <p style="color: #ffffff;">READ MORE</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var maxLength = 35;
+            $(".show-read-more").each(function () {
+                var myStr = $(this).text();
+                if ($.trim(myStr).length > maxLength) {
+                    var newStr = myStr.substring(0, maxLength);
+                    var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+                    $(this).empty().html(newStr);
+                    $(this).append(' <span href="javascript:void(0);" class="read-more">...</span>');
+                    $(this).append('<span class="more-text">' + removedStr + '</span>');
+                }
+            });
+            $(".read-more").click(function () {
+                $(this).siblings(".more-text").contents().unwrap();
+                $(this).remove();
+            });
+        });
+    </script>
+
+    <section class="footerSection">
+        <footer class="footer">
+            <div class="logoInfo">
+                <img alt="Codyle" src="/Photos/Logo.png" height="60px" draggable="false">
+                <p>Codyle makes it easy __ all in one platform! It is a platform where business owners, business
+                    starters,
+                    university students and technology enthusiasts meet.</p>
+            </div>
+
+            <div class="footer-heading footer-1">
+                <h2>Links</h2>
+
+                <a href="Services.html"> Services </a>
+                <a href="Roadmaps.html"> Roadmaps </a>
+                <a href="Blog.html"> Blogs </a>
+
+            </div>
+
+            <div class="footer-heading footer-2">
+                <h2>Explore</h2>
+
+                <a href="Events.html">Events</a>
+                <a href="AboutUs.html"> About us </a>
+                <a href="CSC.html">Codyle Student CLub</a>
+            </div>
+
+            <div class="footer-heading footer-3">
+                <h2>Contacts</h2>
+
+                <div class="SocialmediaIcons">
+                    <a href="https://www.instagram.com/codyle_official/" target="_blank"> <img alt="Codyle Instegram"
+                            src="/Photos/socialMedia/Instegram2.png" height="30px" draggable="false"></a>
+
+
+                    <a href="https://twitter.com/CodyleOfficial" target="_blank"> <img alt="Codyle Twitter"
+                            src="/Photos/socialMedia/Twitter2.png" height="34px" draggable="false"></a>
+
+                    <a href="https://youtube.com/@codyle" target="_blank"> <img alt="Codyle Youtube"
+                            src="/Photos/socialMedia/Youtube2.png" height="34px" draggable="false"> </a>
+
+                    <a href="https://www.tiktok.com/@_codyle" target="_blank"> <img alt="Codyle Tiktok"
+                            src="/Photos/socialMedia/TikTok.png" height="34px " draggable="false"></a>
+                </div>
+
+            </div>
+
+        </footer>
+        <p class="copyrights">© All Rights Reserved. CODYLE<a href="Privacy.html">Privacy Policy</a></p>
+    </section>
+</body>
+
+</html>

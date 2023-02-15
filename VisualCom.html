@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Photos/Icons/websiteicon.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Introduction to Front-End</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="EventDetails.css">
+</head>
+
+<body>
+
+    <!-- Nav-bar -->
+    <iframe src="./navbar.html" frameborder="0" style="width: 100%;"></iframe>
+    <!-- Nav-bar -->
+
+    <form method="post" class="EventForm">
+        <input hidden asp-for="EventId" />
+        <div class="event">
+
+            <div>
+                <img class="eventpic" src="Photos/events/s.png" style="border-radius: 14px;" alt="@Model.Event.Title"
+                    draggable="false">
+            </div>
+
+            <div class="eventwriting">
+
+                <h1 style="font-size:20pt ;">Visual Communication</h1>
+
+                <div class="date">
+                    <img class="dateimg" src="Photos/date2.png" height="18px" alt="date image" draggable="false">
+                    <p>04/01/2022 Wed 13:30 - 15:30 </p>
+                </div>
+
+                <div>
+                    <h2 style="font-size:12pt ; margin:10px 0px 5px 0px ">
+                        <img class="dateimg" src="Photos/location2.png" height="18px" alt="date image"
+                            draggable="false">
+                        Usukdar University Merkez A-Block 205
+                    </h2>
+
+                    <a target="_blank" href="@Model.Event.LocationUrl">show on map</a>
+                </div>
+
+
+                <!--<p>Price: @Model.Event.Price TL</p>-->
+
+                <p>Price: Free!</p>
+
+
+                <div class="ticket">
+                    <!--   @if(Model.Event.Finished == "Yes"){-->
+                    <a target="_blank"
+                        href="https://docs.google.com/presentation/d/144wWokug9AQcQTtfpo1zzubSv97dJJeb/edit?usp=share_link&ouid=104560974567666509082&rtpof=true&sd=true"
+                        style="margin-top:5px;">Download Slides</a>
+
+                    <!--   }
+                    else
+                    {
+                    if (Model.Event.Price > 0)
+                    { -->
+                    <!-- <button type="submit" class="ticket" href="#" value="book a ticket">Buy a ticket</button> -->
+                    <!--  }
+                    else if (Model.Event.Price == 0)
+                    { -->
+                    <!-- <a class="ticket" asp-controller="Home" asp-action="ReserveASeat" asp-area="User">Reserve a
+                        seat!</a> -->
+
+                    <!-- }
+                    } -->
+
+
+                    <!-- @if (Model.Event.Price > 0)
+                    { -->
+                    <!-- <input type="number" asp-for="Count" class="tickett"> -->
+                    <!-- }
+                    else if (Model.Event.Price == 0)
+                    {
+
+                    } -->
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="eventdetails">
+
+            <p>Visual communication is the use of visual components to communicate information and ideas. In this event,
+                we will introduce you to the general concept of UI/UX design and why you should have it in your skill
+                set regardless to your field.</p>
+
+
+
+        </div>
+    </form>
+
+
+
+
+    <section class="footerSection">
+        <footer class="footer">
+            <div class="logoInfo">
+                <img alt="Codyle" src="/Photos/Logo.png" height="60px" draggable="false">
+                <p>Codyle makes it easy __ all in one platform! It is a platform where business owners, business
+                    starters,
+                    university students and technology enthusiasts meet.</p>
+            </div>
+
+            <div class="footer-heading footer-1">
+                <h2>Links</h2>
+
+                <a href="Services.html"> Services </a>
+                <a href="Roadmaps.html"> Roadmaps </a>
+                <a href="Blog.html"> Blogs </a>
+
+            </div>
+
+            <div class="footer-heading footer-2">
+                <h2>Explore</h2>
+
+                <a href="Events.html">Events</a>
+                <a href="AboutUs.html"> About us </a>
+                <a href="CSC.html">Codyle Student CLub</a>
+            </div>
+
+            <div class="footer-heading footer-3">
+                <h2>Contacts</h2>
+
+                <div class="SocialmediaIcons">
+                    <a href="https://www.instagram.com/codyle_official/" target="_blank"> <img alt="Codyle Instegram"
+                            src="/Photos/socialMedia/Instegram2.png" height="30px" draggable="false"></a>
+
+
+                    <a href="https://twitter.com/CodyleOfficial" target="_blank"> <img alt="Codyle Twitter"
+                            src="/Photos/socialMedia/Twitter2.png" height="34px" draggable="false"></a>
+
+                    <a href="https://youtube.com/@codyle" target="_blank"> <img alt="Codyle Youtube"
+                            src="/Photos/socialMedia/Youtube2.png" height="34px" draggable="false"> </a>
+
+                    <a href="https://www.tiktok.com/@_codyle" target="_blank"> <img alt="Codyle Tiktok"
+                            src="/Photos/socialMedia/TikTok.png" height="34px " draggable="false"></a>
+                </div>
+
+            </div>
+
+        </footer>
+        <p class="copyrights">© All Rights Reserved. CODYLE<a href="Privacy.html">Privacy Policy</a></p>
+    </section>
+
+</body>
+
+</html>
