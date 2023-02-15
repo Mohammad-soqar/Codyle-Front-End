@@ -4,7 +4,7 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 885px) {
     .welcomegrid {
         display: flex;
         margin: 50px 0px 0px 0px;
@@ -16,6 +16,7 @@
     .getstarted {
         height: 40px;
         width: 100px;
+
         text-decoration: none;
     }
 
@@ -37,7 +38,7 @@
     }
 
     .textandstartbutton a {
-        background: #252A34;
+        background: linear-gradient(#DE1749, #FF2E63);
         padding: 5px 15px 5px 15px;
         border-radius: 10px;
         font-size: 22px;
@@ -86,7 +87,7 @@
         color: #ffffff;
     }
 
-    .textSide-Service p {}
+
 
     .textSide-Service h2 {
         font-size: 28pt !important;
@@ -120,12 +121,12 @@
         margin: 60px 0px 0px 0px;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         justify-items: center;
     }
 
     .EventSection {
-        margin: 200px 0px 0px 0px;
+        margin: 140px 0px 0px 0px;
     }
 
     .EventImg {
@@ -152,28 +153,52 @@
         margin: 9px 0px 0px 0px;
     }
 
-    .roadmapSection {
-        width: 100%;
-        margin-inline-start: auto;
-        margin-inline-end: auto;
-         overflow:auto;
-         white-space: nowrap;
-        padding-inline-start: 1rem;
-        padding-inline-end: 1rem;
-    }
-    .roadmapSection::-webkit-scrollbar{
-        background: #FF2E63;
-        border-radius: 10px;
-        color: #252A34;
-        overflow-x: scroll;
-        direction: rtl;
+    .Text-Pic-RoadmapSec {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    .Roadslinks {
+    .Text-RoadmapSec {
+        width: 40%;
+        color: #ffffff;
+        font-family: 'MontserratMedium';
+    }
+
+    .Text-RoadmapSec h2 {
+        font-size: 33px
+    }
+
+    .roadmapSection {
+        width: 100%;
         margin: 150px 0px 0px 0px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
+        background: linear-gradient(#252A34, #FF2E63, #FF2E63, #252A34);
+    }
+
+
+
+    .Roadslinks {
+        margin: 30px 100px 0px 100px;
         display: grid;
+        justify-items: center;
         grid-gap: 80px;
         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    
+    .Roadslinks a {
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        background: #252A34;
+        padding: 30px;
+        max-width: 200px;
+        border-radius: 10px;
+        position: relative;
+
     }
 
     .Roadslinks h2 {
@@ -181,17 +206,6 @@
         font-family: 'MontserratMedium';
         margin-bottom: 5px;
         color: #ffffff;
-    }
-
-    .Roadslinks a {
-        cursor: pointer;
-        text-decoration: none;
-        color: inherit;
-        background: #252A34;
-        padding: 30px;
-        border-radius: 10px;
-        position: relative;
-        box-shadow: 0 -1px 10px 0 #ff2e6270;
     }
 
     .Roadslinks p {
@@ -202,7 +216,22 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+
+
+.roadmapSection {
+    padding: 80px 0px 80px 0px;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .whatiscodyletext img {
+        height: 40px;
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 885px) {
     .welcomegrid {
         display: grid;
         justify-items: center;
@@ -213,21 +242,41 @@
     }
 
     .roadmapSection {
-
+        width: 100%;
+        margin: 150px 0px 0px 0px;
         margin-inline-start: auto;
         margin-inline-end: auto;
-        margin: 0px 20px 0px 20px;
-        max-width: 1080px;
-        padding-inline-start: 1rem;
-        padding-inline-end: 1rem;
+       
+        background: linear-gradient(#252A34, #FF2E63, #FF2E63, #252A34);
+    }
+
+    .Text-Pic-RoadmapSec{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Text-RoadmapSec {
+        width: 60%;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'MontserratMedium';
+    }
+
+    .Text-RoadmapSec h2 {
+        font-size: 33px
     }
 
 
     .Roadslinks {
-        margin: 150px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
         display: grid;
+        justify-items: center;
         grid-gap: 80px;
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .map {
+        display: none;
     }
 
     .Roadslinks h2 {
@@ -241,11 +290,12 @@
         cursor: pointer;
         text-decoration: none;
         color: inherit;
+        max-width: 200px;
         background: #252A34;
         padding: 30px;
         border-radius: 10px;
         position: relative;
-        box-shadow: 0 -1px 10px 0 #ff2e6270;
+
     }
 
     .Roadslinks p {
@@ -282,7 +332,7 @@
     }
 
     .textandstartbutton a {
-        background: #252A34;
+        background: linear-gradient(#DE1749, #FF2E63);
         padding: 5px 15px 5px 15px;
         border-radius: 10px;
         font-size: 18px;
@@ -303,10 +353,6 @@
         margin: 80px 30px 0px 30px;
         justify-items: center;
     }
-
-
-
-
 
     .blogBox {
         margin: 40px 0px 0px 0px;
@@ -331,22 +377,6 @@
         margin: 0px 10px 0px 10px;
     }
 
-}
-
-.roadmapSection {
-    padding: 0px 0px 50px 0px;
-}
-
-
-@media only screen and (max-width: 480px) {
-
-    .whatiscodyletext img {
-        height: 40px;
-        margin: 0px 10px 0px 10px;
-    }
-}
-
-@media only screen and (max-width: 885px) {
     .EventSection h2 {
         font-size: 33px !important;
     }
@@ -398,8 +428,6 @@
     align-items: center !important;
 }
 
-
-
 .boldtext {
     text-align: center;
     color: #ffffff;
@@ -407,10 +435,6 @@
     font-family: 'MontserratMedium';
     margin: 0px 0px 0px 0px;
 }
-
-
-
-
 
 .service p {
     width: 70%;
@@ -451,7 +475,6 @@
     align-items: center;
 }
 
-
 .line {
     border-radius: 0px 0px 0px 5px;
     width: 15px;
@@ -464,16 +487,13 @@
     width: 200px;
 }
 
-
-
-
 .BlogSection a {
     text-decoration: none;
     color: #ffffff;
 }
 
 .BlogSection {
-    margin: 200px 0px 0px 0px;
+    margin: 120px 0px 0px 0px;
 }
 
 .BlogSection h2 {
@@ -483,14 +503,12 @@
     font-family: 'MontserratMedium';
 }
 
-
 .BlogSection p {
     font-size: 14px;
     font-family: 'MontserratMedium';
     margin: 15px 0px 0px 20px;
     color: #252A34;
 }
-
 
 .BlogSection h3 {
     width: 250px;
@@ -517,21 +535,11 @@
     margin: 0px 0px 40px 0px;
 }
 
-/*--------------Event--------*/
-
-
-
-
-
-
-
-
 .Events {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 
 .EventSection h1 {
     text-align: center;
@@ -542,10 +550,6 @@
     margin: 0px 0px 40px 0px;
 }
 
-
-
-
-
 .eventBox a {
     text-decoration: none;
 }
@@ -554,9 +558,6 @@
     background: transparent;
     margin: 0px 40px 0px 40px;
 }
-
-
-
 
 .Eventlocation p {
     font-size: 10px;
@@ -570,14 +571,6 @@
     padding: 0px 0px 10px 0px;
     margin: 25px 0px 0px 0px;
 }
-
-
-.Eventlocation {
-    display: flex;
-    padding: 0px 0px 10px 0px;
-    margin: 25px 0px 0px 0px;
-}
-
 
 .Eventdate p {
     text-align: right;
