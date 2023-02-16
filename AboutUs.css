@@ -21,12 +21,6 @@ body {
     margin-top: 50px;
 }
 
-
-
-
-
-
-
 .team {
     margin: 100px 0px 0px 0px;
 }
@@ -86,6 +80,7 @@ body {
 .socialMedia {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 .socialMedia img {
    
