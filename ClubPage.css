@@ -74,6 +74,8 @@ ul {
 
 .welcome {
     margin: 63px 0px 40px 0px;
+    background-color: #252a349e;
+    padding: 1rem;
 }
 .welcome p {
     font-size: 28pt;
@@ -162,11 +164,15 @@ p {
 
     .join-us-btn {
         margin: 60px 0px 40px 0px;
-        display: flex;
-        justify-content: center;
+        
         margin-top: 0;
     }
 
+    .join-btn{
+        display: flex;
+        justify-content: center;
+    }
+    
     a {
         text-decoration: none;
     }

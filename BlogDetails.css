@@ -1,3 +1,8 @@
+*{
+    scroll-behavior: smooth;
+
+}
+
 body {
     font-family: MontserratMedium;
     color: #ffffff;
@@ -34,14 +39,12 @@ a:hover {
         align-items: flex-end;
     }
 
-    .line1 {
+    .blog-info {
         display: flex;
         flex-direction: column;
     }
 
-    .secnd {
-        margin-left: 0px;
-    }
+   
     .InstagramPost {
         display: grid;
         margin: 40px 0px 0px 0px;
@@ -65,15 +68,15 @@ a:hover {
         align-items: flex-end;
     }
 
-    .line1 {
+    .blog-info {
         display: flex;
-        flex-direction: column;
+    }
+    
+    .identifier p {
+        margin: 0rem 2rem 0rem 0rem;
     }
 
-    .secnd {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+ 
     .InstagramPost {
         display: grid;
         width: 70%;
@@ -94,6 +97,10 @@ h5,
 label {
     font-family: MontserratMedium;
     color: #ffffff !important;
+}
+
+p{
+    font-size: 18px;
 }
 
 .content {
@@ -119,6 +126,7 @@ label {
 
 .blog {
     width: 100%;
+    overflow: hidden;
 }
 
 .ads {
@@ -136,9 +144,11 @@ label {
 }
 
 .info {
-    width: 100%;
+   
     border-radius: 12px;
     background-color: #0000001f;
+    padding: 1rem;
+    margin: 3rem 0rem 0rem 0rem;
 }
 
 .info-con {
@@ -146,7 +156,10 @@ label {
     align-items: center;
 }
 
-.infoContent {
-    margin: 20px 40px 0px 40px;
-    padding-bottom: 20px;
+.identifier {
+    display: flex;
+    align-items: center;
+}
+.identifier p{
+    margin: 0px 1.5rem 0px 0.5rem;
 }
