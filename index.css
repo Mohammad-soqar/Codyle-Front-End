@@ -136,10 +136,7 @@
         border-radius: 5.67px 5.67px 0px 0px;
     }
 
-    .right img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
+    
 
     .Eventdate {
         display: flex;
@@ -191,7 +188,7 @@
         grid-gap: 80px;
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
-    
+
     .Roadslinks a {
         cursor: pointer;
         text-decoration: none;
@@ -218,7 +215,10 @@
     }
 
 }
-
+.right img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 
 .roadmapSection {
@@ -249,11 +249,11 @@
         margin: 150px 0px 0px 0px;
         margin-inline-start: auto;
         margin-inline-end: auto;
-       
+
         background: linear-gradient(#252A34, #FF2E63, #FF2E63, #252A34);
     }
 
-    .Text-Pic-RoadmapSec{
+    .Text-Pic-RoadmapSec {
         display: flex;
         justify-content: center;
     }
@@ -524,10 +524,8 @@
 .blog {
     margin: 0px 40px 0px 40px;
     width: max-content;
-    
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     padding-bottom: 20px;
     background: linear-gradient(#DE1749 60%, #FF2E63);
     box-shadow: 0 -1px 13px 0 #ff2e6270;

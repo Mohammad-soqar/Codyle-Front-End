@@ -237,6 +237,11 @@ body {
         overflow: hidden;
     }
 
+    .join-btn{
+        display: flex;
+        justify-content: center;
+    }
+
     .lets-go-btn {
         margin: 60px 0px 40px 0px;
         display: flex;
