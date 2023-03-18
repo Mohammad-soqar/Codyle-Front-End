@@ -18,7 +18,7 @@
         height: 440px;
     }
 
-    .textandstartbutton {
+    .heading {
         width: 34%;
     }
 
@@ -47,7 +47,7 @@
 
   
 
-    .textandstartbutton a {
+    .heading a {
         padding: 5px 15px 5px 15px;
         border-radius: 10px;
         font-size: 16px;

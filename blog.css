@@ -42,7 +42,7 @@
         height: 420px;
     }
 
-    .textandstartbutton {
+    .heading {
         width: 34%;
  
         }
@@ -77,7 +77,7 @@
     }
 
  
-    .textandstartbutton a {
+    .heading a {
         background: linear-gradient(#DE1749, #FF2E63);
         padding: 5px 15px 5px 15px;
         border-radius: 10px;
