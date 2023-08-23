@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Speaker.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="balls-container"></div>
+
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logolink"><img alt="Codyle" src="Photos/Logo.png" height="60px"
+                    draggable="false"></a>
+            <ul class="navGlinks">
+
+                <li class="navlinks"><a href="Events.html">Events</a></li>
+                <li class="navlinks"><a href="Services.html">Services</a></li>
+                <li class="navlinks"><a href="Roadmaps.html">RoadMaps</a></li>
+                <li class="navlinks"><a href="Blog.html">Blogs</a></li>
+                <li class="navlinks"><a href="CSC.html">CSC</a></li>
+                <li class="navlinks"><a href="AboutUs.html">About us</a></li>
+
+            </ul>
+
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+                <ul id="mobile-menu" class="mobile-menu">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Roadmaps.html">RoadMaps</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="CSC.html">CSC</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <script src="site.js"></script>
+    </header>
+
+    <section class="Speaker-Section">
+        <div class="Speaker-Info-flex">
+            <div class="Speaker-Info">
+                <img src="Photos/events/ola.png" width="150rem" alt="">
+                <h2>Speaker</h2>
+                <h3>Ola Soqar</h3>
+                <h4>Freelance Graphic Designer</h4>
+                <p>Will Smith is an actor, producer, and musician, and a two-time Academy Award nominee and Grammy and
+                    NAACP
+                    award winner, who has enjoyed a diverse career encompassing films, television shows, and
+                    multiplatinum
+                    albums. He holds many box office records, including the most consecutive $100 million–grossing
+                    movies
+                    (eight). He and his wife founded the Will & Jada Smith Family Foundation to improve lives by
+                    providing
+                    invaluable resources to accelerate the growth of initiatives that focus on deepening individual and
+                    collective empowerment in the areas of arts and education, social empowerment, health and wellness,
+                    and
+                    sustainability.</p>
+
+                <div class="SocialMedia">
+                    <h4>Social Media</h4>
+                    <div class="SocialMedia-Links">
+                        <a>
+                            <img src="Photos/socialMedia/new/Behance.png" height="30px" alt="">
+                        </a>
+
+                        <a>
+                            <img src="Photos/socialMedia/new/Github.png" height="30px" alt="">
+                        </a>
+
+                        <a>
+                            <img src="Photos/socialMedia/new/LinkedIn.png" height="30px" alt="">
+                        </a>
+
+                        <a>
+                            <img src="Photos/socialMedia/new/Instagram.png" height="30px" alt="">
+                        </a>
+
+                        <a>
+                            <img src="Photos/socialMedia/new/Link.png" height="30px" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="OtherEvents">
+            <h2>Codyle Events That Ola Soqar Participated In:</h2>
+
+        </div>
+        <div class="Speaker-Events">
+            <div class="Event right">
+
+                <a href="IntroToFE.html">
+
+                    <img alt="Front-End" class="EventImg" src="/Photos/events/Front-end-Finished.png" draggable="false">
+
+                    <div class="EventTicket">
+
+                        <div class="line"></div>
+                        <div class="Eventinfo">
+
+                            <div class="Title-Location">
+                                <div class="EventTitle">
+                                    <h3 class="show-read-more">Introduction to Front-End</h3>
+                                </div>
+
+                                <div class="Eventlocation">
+                                    <img alt="Event Location" src="icons/location.png" height="14px" draggable="false">
+                                    <p>Üsküdar University Central Campus</p>
+                                </div>
+                            </div>
+
+
+                            <div class="Eventdate">
+                                <img alt="Event Date" src="icons/Date.png" height="14px" draggable="false">
+                                <p>28/12/2022</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ------------------Footer---------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="balls.js"></script>
+    <script>
+        $(document).ready(function () {
+            var ballsContainer = $('#balls-container');
+
+            for (var i = 0; i < numBalls; i++) {
+                var ball = $('<div class="ball"></div>');
+                ballsContainer.append(ball);
+
+                var xPos = Math.floor(Math.random() * $(window).width());
+                var yPos = Math.floor(Math.random() * $(window).height());
+                var angle = Math.random() * 360;
+
+                ball.css({
+                    left: xPos + 'px',
+                    top: yPos + 'px',
+                    transform: 'rotate(' + angle + 'deg)'
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

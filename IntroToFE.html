@@ -15,9 +15,9 @@
 </head>
 
 <body>
-
-   <!-- Nav-bar -->
- <header>
+    <div id="balls-container"></div>
+    <!-- Nav-bar -->
+    <header>
         <nav class="nav">
             <a href="index.html" class="logolink"><img alt="Codyle" src="Photos/Logo.png" height="60px"
                     draggable="false"></a>
@@ -42,7 +42,7 @@
                     <li><a href="Services.html">Services</a></li>
                     <li><a href="Roadmaps.html">RoadMaps</a></li>
                     <li><a href="Blog.html">Blog</a></li>
-<li><a href="CSC.html">CSC</a></li>
+                    <li><a href="CSC.html">CSC</a></li>
                     <li><a href="AboutUs.html">About us</a></li>
 
 
@@ -52,85 +52,177 @@
 
         <script src="site.js"></script>
     </header>
-  <!-- Nav-bar -->
+    <!-- Nav-bar -->
 
-    <form method="post" class="EventForm">
+   
         <input hidden asp-for="EventId" />
-        <div class="event">
+        <div class="Event-Details">
 
-            <div>
-                <img class="eventpic" src="Photos/events/Front-end-Finished.png" style="border-radius: 14px;"
-                    alt="@Model.Event.Title" draggable="false">
+            <div class="Thumbnail">
+                <img src="Photos/MAUI COVER.png" height="450px" alt="@Model.Event.Title" draggable="false">
             </div>
 
-            <div class="eventwriting">
-
-                <h1 style="font-size:20pt ;">Introduction to Front-End</h1>
-
-                <div class="date">
-                    <img class="dateimg" src="Photos/date2.png" height="18px" alt="date image" draggable="false">
-                    <p>28/12/2022 Wed 13:30 - 15:30 </p>
-                </div>
-               
-                <div>
-                    <h2 style="font-size:12pt ; margin:10px 0px 5px 0px ">
-                        <img class="dateimg" src="Photos/location2.png" height="18px" alt="date image"
-                            draggable="false">
-                        Usukdar University Merkez A-Block 205
-                    </h2>
-
-                    <a target="_blank" href="@Model.Event.LocationUrl">show on map</a>
-                </div>
-
-
-                <!--<p>Price: @Model.Event.Price TL</p>-->
-
-                <p>Price: Free!</p>
-
-
-                <div class="ticket">
-                    <!--   @if(Model.Event.Finished == "Yes"){-->
-                    <a  target="_blank" href="https://docs.google.com/presentation/d/144wWokug9AQcQTtfpo1zzubSv97dJJeb/edit?usp=share_link&ouid=104560974567666509082&rtpof=true&sd=true"  style="margin-top:5px;">Download Slides</a>
-
-                    <!--   }
-                    else
-                    {
-                    if (Model.Event.Price > 0)
-                    { -->
-                    <!-- <button type="submit" class="ticket" href="#" value="book a ticket">Buy a ticket</button> -->
-                    <!--  }
-                    else if (Model.Event.Price == 0)
-                    { -->
-                    <!-- <a class="ticket" asp-controller="Home" asp-action="ReserveASeat" asp-area="User">Reserve a
-                        seat!</a> -->
-
-                    <!-- }
-                    } -->
-
-
-                    <!-- @if (Model.Event.Price > 0)
-                    { -->
-                    <!-- <input type="number" asp-for="Count" class="tickett"> -->
-                    <!-- }
-                    else if (Model.Event.Price == 0)
-                    {
-
-                    } -->
+            <div class="EventInfo">
+                <div class="Title-CTA">
+                    <div class="Title-Date">
+                        <h3>22 JUN</h3>
+                        <h1>Introducing .NET Multi-platform App UI</h1>
+                    </div>
+                    <div class="CTA-BTN">
+                        <button><img src="Photos/Like.png" alt="like btn"></button>
+                        <button><img src="Photos/share.png" alt="share btn"></button>
+                    </div>
 
                 </div>
 
+                <div class="Event-Details-Sec-2">
+                    <!-- Left Side -->
+                    <div class="Event-Details-Sec-Left">
+
+
+                        <div class="Followers-Sec">
+                            <p>250 Followers</p>
+
+                            <button class="default-CTA-btn">Follow</button>
+                        </div>
+
+
+                        <div class="WAW-sec">
+                            <h2>When And Where</h2>
+                            <div class="WAW-Content">
+                                <div class="WAW-sup-sec">
+                                    <img src="Photos/dateevent.png" alt="">
+
+                                    <div class="WAW-sup-sec-txt">
+                                        <h3>Date & Time</h3>
+                                        <p>Thursday, June 22 / 7:30 - 9:30 PM </p>
+                                    </div>
+
+                                </div>
+                                <div class="separator">
+
+                                </div>
+                                <div class="WAW-sup-sec">
+                                    <img src="Photos/locationevent.png" alt="">
+
+                                    <div class="WAW-sup-sec-txt">
+                                        <h3>Location</h3>
+                                        <p>Usukdar University A-block Nermin Tarhan hall</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="WAW-sec About-Event">
+                            <h2>About This Event</h2>
+                            <div class="WAW-Content">
+                                <div class="WAW-sup-sec">
+                                    <img src="Photos/Durationevent.png" alt="">
+
+                                    <div class="WAW-sup-sec-txt">
+                                        <h3>Date & Time</h3>
+                                    </div>
+
+                                </div>
+                                <div class="separator">
+
+                                </div>
+                                <div class="WAW-sup-sec">
+                                    <img src="Photos/Eticketevent.png" alt="">
+
+                                    <div class="WAW-sup-sec-txt">
+                                        <h3>Mobile eTicket</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="Speakers-sup-sec">
+                            <h2>Speakers</h2>
+                            <div class="Speakers-grid"><!-- grid -->
+                                <a class="Speaker" href="Speaker.html">
+                                    <img src="Photos/events/ola.png" height="35px" alt="">
+                                    <span>Ola Soqar</span>
+                                </a>
+                             
+                            </div>
+                        </div>
+
+                        <p>🌎🤝 You're Invited: We Call it Home: Istanbul Dialogues - Inclusion 🤝🌎
+
+                            As we wrap up the first half of the year, "We Call It Home: Istanbul Dialogues" returns for
+                            its June edition, focusing on an empowering and vital theme – Inclusion. This series
+                            spotlights the rich and diverse contributions of Istanbul's international community to the
+                            city's vibrant cultural scene, humanitarian activities, business landscape, and sporting
+                            sector.
+                            In our June dialogue, we delve deeper into the concept of 'Inclusion'. This is a pivotal
+                            aspect in fostering understanding, empathy, and unity within our multifaceted community.
+                            Let's explore how we can break down barriers, build bridges, and ensure every person feels
+                            authentically included.
+                            During our "Inclusion" dialogue, you can expect:
+                            Engaging conversations on the significance of social, cultural, and professional inclusion
+                            led by thought leaders and influencers,
+                            An open platform for sharing personal experiences and insights on nurturing inclusive
+                            environments,
+                            Networking opportunities with individuals committed to creating a more inclusive society.
+                            Moderator:
+
+                            Jennifer Hattam
+
+                            Guest Speakers:
+
+                            Raycene Nevils-Karakeçi
+
+                            Suha Nabhan
+
+                            Liana Georgi
+
+                            Whether you're a local or an international resident, we extend a warm invitation for you to
+                            be a part of this dialogue. Together, let's listen, learn, and inspire each other towards a
+                            more inclusive future.
+
+                            "We Call It Home: Istanbul Dialogues" is a collaborative initiative by ATÖLYE, Yabangee, and
+                            Settle Turkey.
+
+                            Join us on June 22nd at 7:30 PM for the final dialogue before we break for the summer, and
+                            resume in September. We look forward to your valuable presence!</p>
+
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="Event-Details-Sec-Right">
+                        <div class="Reserve-btn">
+                            <div class="info-reserve">
+                                <p>THE EVENT TITLE THE EVENT TITLE</p>
+                                <div class="countInput">
+                                    <button class="decrease-btn minus" data-id="@item.Id">-</button>
+                                    <input disabled id="quantity-" type="number"  min="1" max="2" value="1">
+                                    <button class="increase-btn plus" data-id="@item.Id">+</button>
+                                </div>
+                            </div>
+                         
+                            <div class="Reserve-A-Spot">
+                                <button class="default-CTA-btn">Reserve A Spot</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
-        </div>
-
-        <div class="eventdetails">
-
-            <p>This event will focus on what Front-End is and how to become a Front-End web developer as we teach some
-                basic skills for beginners to learn from.</p>
-
-
 
         </div>
-    </form>
+
+
+   
 
 
 
@@ -165,8 +257,8 @@
                 <h2>Contacts</h2>
 
                 <div class="SocialmediaIcons">
- <a href="https://www.linkedin.com/company/codyle/" target="_blank"> <img alt="Codyle Instegram"
-              src="/Photos/socialMedia/LinkedIn.png" height="25px" draggable="false"></a>
+                    <a href="https://www.linkedin.com/company/codyle/" target="_blank"> <img alt="Codyle Instegram"
+                            src="/Photos/socialMedia/LinkedIn.png" height="25px" draggable="false"></a>
                     <a href="https://www.instagram.com/codyle_official/" target="_blank"> <img alt="Codyle Instegram"
                             src="/Photos/socialMedia/Instegram2.png" height="30px" draggable="false"></a>
 
@@ -188,5 +280,73 @@
     </section>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script src="balls.js"></script>
+<script>
+    $(document).ready(function () {
+        var ballsContainer = $('#balls-container');
+
+        for (var i = 0; i < numBalls; i++) {
+            var ball = $('<div class="ball"></div>');
+            ballsContainer.append(ball);
+
+            var xPos = Math.floor(Math.random() * $(window).width());
+            var yPos = Math.floor(Math.random() * $(window).height());
+            var angle = Math.random() * 360;
+
+            ball.css({
+                left: xPos + 'px',
+                top: yPos + 'px',
+                transform: 'rotate(' + angle + 'deg)'
+            });
+        }
+    });
+
+
+    $(document).ready(function() {
+  const reserveButton = $('.Reserve-btn');
+  const eventDetails = $('.Event-Details');
+  const eventInfo = $('.EventInfo');
+  const eventInfoOffsetTop = eventInfo.offset().top;
+  const eventInfoHeight = eventInfo.outerHeight();
+
+  const updateReserveButtonPosition = () => {
+    const scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition >= eventInfoOffsetTop && scrollPosition < eventInfoOffsetTop + eventInfoHeight) {
+      reserveButton.addClass('sticky');
+    } else {
+      reserveButton.removeClass('sticky');
+    }
+  };
+
+  // Initial position check
+  updateReserveButtonPosition();
+
+  // Update position on scroll
+  $(window).scroll(updateReserveButtonPosition);
+});
+
+$(document).ready(function() {
+  $('.decrease-btn').on('click', function() {
+    var input = $(this).siblings('input');
+    var currentValue = parseInt(input.val());
+    if (currentValue > 1) {
+      input.val(currentValue - 1);
+    }
+  });
+
+  $('.increase-btn').on('click', function() {
+    var input = $(this).siblings('input');
+    var currentValue = parseInt(input.val());
+    if (currentValue < 2) {
+      input.val(currentValue + 1);
+    }
+  });
+});
+
+        
+</script>
 
 </html>
