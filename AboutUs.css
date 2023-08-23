@@ -1,6 +1,7 @@
-@font-face {
+/* @font-face {
+
     font-family: 'MontserratMedium';
-    src: url('fonts/medium/Montserrat-Medium.ttf') ;
+    src: url('fonts/medium/Montserrat-Medium.ttf');
 }
 
 
@@ -56,9 +57,11 @@ body {
     color: #ffffff;
     font-family: 'MontserratMedium';
 }
-.FPERSENTWIDTH{
+
+.FPERSENTWIDTH {
     width: 50%;
 }
+
 .cardcontent p {
     margin: 8px 0px;
     box-sizing: border-box;
@@ -82,23 +85,25 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .socialMedia img {
-   
+
     border-top-left-radius: 0px !important;
-        border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
 }
-    .socialMedia a {
-        padding-bottom: 10px;
-        box-sizing: border-box;
-        margin: 10px 10px 0px 10px;
-        text-decoration: none;
-    
-    }
+
+.socialMedia a {
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin: 10px 10px 0px 10px;
+    text-decoration: none;
+
+}
 
 .welcome p {
     text-align: center;
     color: #ffffff;
-  
+
     font-family: 'MontserratMedium';
 }
 
@@ -114,17 +119,18 @@ body {
 }
 
 .aboutcodyle {
-    margin: 80px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
-.howwestartedtext {
-    color: #eaeaea;
-    font-family: MontserratMedium;
-}
+
 .howwestartedtext p {
     font-size: 13pt;
 
 }
+
 .team h2 {
     text-align: center;
     color: #ffffff;
@@ -145,10 +151,7 @@ body {
         align-content: center;
     }
 
-    .howwestart img {
-        height: 270px;
-    }
-
+   
     .howwestarted {
         display: flex;
         align-items: center;
@@ -167,13 +170,13 @@ body {
         margin-left: 0px !important;
     }
 
-        .whyus p {
-            font-size: 16px;
-        }
+    .whyus p {
+        font-size: 16px;
+    }
 
-        .whyus h2 {
-            font-size: 26px;
-        }
+    .whyus h2 {
+        font-size: 26px;
+    }
 
     .CardBox {
         margin: 60px 0px 0px 0px;
@@ -183,7 +186,7 @@ body {
         justify-items: center;
     }
 
-   
+
 }
 
 
@@ -199,17 +202,15 @@ body {
     }
 
 
-        .welcome h2 {
-            position: absolute;
-            z-index: 3;
-            font-family: 'MontserratMedium';
-            font-size: 38px;
-            color: #ffffff;
-        }
-
-    .howwestart img {
-        height: 150px;
+    .welcome h2 {
+        position: absolute;
+        z-index: 3;
+        font-family: 'MontserratMedium';
+        font-size: 38px;
+        color: #ffffff;
     }
+
+    
 
     .howwestarted {
         display: flex;
@@ -231,4 +232,133 @@ body {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         justify-items: center;
     }
+} */
+
+.Welcome-Text {
+    width: 60%;
+}
+
+.aboutcodyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 8rem 14rem 0rem 14rem;
+}
+
+.Welcome-Text h1 {
+    color: #FFF;
+    font-size: 3.34063rem;
+    font-family: Montserrat;
+    font-weight: 500;
+
+}
+
+.Welcome-Text h2 {
+    color: #FFF;
+    font-size: 1.34063rem;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14rem 14rem 0rem 14rem;
+    gap: 3rem;
+}
+
+.Mission-Values{
+    color: #FFF;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem 14rem 0rem 14rem;
+
+}
+
+.Mission-Values h2{
+    font-size: 2rem;
+}
+
+.Grid-Missions{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sup-Mission{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1.5rem;
+}
+
+.sup-Mission p{
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.sup-Mission h3{
+    font-size: 18pt;
+}
+
+
+.Sup-Header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.About-Text h2 {
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.About-Text p {
+    color: #FFF;
+    width: 70%;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.About-Text-CSC h2 {
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.About-Text-CSC p {
+    color: #FFF;
+    width: 90%;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.CSC-About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 14rem 0rem 14rem;
+    color: #FFF;
+}
+
+.CSC-About h2{
+    font-size: 2.3rem;
+
+}
+
+.About-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }

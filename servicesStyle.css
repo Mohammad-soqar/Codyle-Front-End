@@ -1,0 +1,117 @@
+body{
+    background-color: #252A34;
+}
+a{
+    text-decoration: none;
+}
+
+.Services-Section{
+    margin: 6rem 0rem 0rem 0rem;
+}
+
+.service-Section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 4rem ;
+    
+    
+    margin: 2rem 14rem;
+}
+.service1 {
+    position: relative; 
+    overflow: hidden; 
+    box-shadow: #FF2E63 1px 1px 12px;
+    background-color: #262a35;
+    padding: 2rem 1rem; 
+    border: 2px solid #FF2E63;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: all 1s ease;
+}   
+.service1 h3{
+    color: #ffffff;
+    font-family: 'MontserratMedium';
+    font-size: 24pt;
+    margin: 10rem 0 0 0;
+    transition: margin-top 1s ease;
+
+}
+
+.Services-Section h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'MontserratMedium';
+
+    margin: 0px 0px 0px 0px;
+}
+
+
+.service1 a{
+    background-color: #ffffff;
+    padding: 0.4rem 1rem;
+    border-radius: 27px;
+    color: #FF2E63;
+    font-size: 14pt;
+    font-weight: 600;
+    font-family: 'MontserratMedium';
+}
+
+.service1-unvisible p{
+    font-size: 12pt;
+    color: #252A34;
+    font-weight: 600;
+    margin: 1.2rem 0 3rem 0;
+}
+.service1:hover .service1-unvisible {
+    display: block; 
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  @media only screen and (max-width: 750px) {
+    .service-Section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem 4rem ;
+        margin: 2rem 1rem;
+    }
+
+    .service1 h3{
+        color: #ffffff;
+        font-family: 'MontserratMedium';
+        font-size: 24pt;
+        margin: 0rem !important;
+        transition: margin-top 1s ease;
+    
+    }
+
+    .service1 {
+        position: relative; 
+        overflow: hidden; 
+        padding: 2rem 1rem;
+        border: 2px solid #FF2E63;
+        height: 10rem;
+        display: flex;
+        border-radius: 2rem !important;
+        background-color: #FF2E63 !important;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        transition: all 1s ease;
+    } 
+
+    .service1-unvisible p{
+        font-size: 10pt;
+        color: #252A34;
+        font-weight: 600;
+        margin: 1.2rem 0 1.2rem 0;
+    }
+}
