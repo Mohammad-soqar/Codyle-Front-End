@@ -144,11 +144,11 @@ button:focus {
     display: flex;
 }
 
-.CTA-BTN button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
+    .CTA-BTN button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
 
 .Title-Date {
     display: flex;
@@ -157,15 +157,15 @@ button:focus {
     width: 50%;
 }
 
-.Title-Date h1 {
-    font-size: 26pt;
-    font-weight: 800;
-}
+    .Title-Date h1 {
+        font-size: 26pt;
+        font-weight: 800;
+    }
 
-.Title-Date h3 {
-    font-size: 14pt;
-    font-weight: 600;
-}
+    .Title-Date h3 {
+        font-size: 14pt;
+        font-weight: 600;
+    }
 
 .Event-Details-Sec-2 {
     display: flex;
@@ -176,6 +176,7 @@ button:focus {
 
 .Event-Details-Sec-Left {
     width: 60%;
+    margin: 3rem 0rem 0rem 0rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -190,10 +191,10 @@ button:focus {
     align-items: center;
 }
 
-.Followers-Sec p {
-    font-size: 16pt;
-    font-weight: 800;
-}
+    .Followers-Sec p {
+        font-size: 16pt;
+        font-weight: 800;
+    }
 
 .WAW-Content {
     display: flex;
@@ -209,7 +210,6 @@ button:focus {
     width: 100%;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .WAW-sec h2 {
@@ -222,25 +222,23 @@ button:focus {
     font-weight: 800;
 }
 
-.Speakers-grid{
+.Speakers-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     margin: 2rem 0rem 0rem 0rem;
 }
 
-.Speaker{
+.Speaker {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-  
     color: #ffffff;
 }
 
-.Speaker span{
-    font-size: 14pt;
-    
-}
+    .Speaker span {
+        font-size: 14pt;
+    }
 
 .ball {
     opacity: 0.3 !important;
@@ -251,20 +249,23 @@ button:focus {
     margin: 0rem 0rem 0rem 1rem;
 }
 
-.WAW-sup-sec-txt h3 {
-    font-size: 14pt;
-    font-weight: 800;
+.WAW-sup-sec-txt a{
+    color: #fff;
 }
 
-.WAW-sup-sec-txt p {
-    font-size: 10pt;
-    margin: 0.5rem 0rem 0rem 0rem;
 
-}
+    .WAW-sup-sec-txt h3 {
+        font-size: 14pt;
+        font-weight: 800;
+    }
+
+    .WAW-sup-sec-txt p {
+        font-size: 10pt;
+        margin: 0.5rem 0rem 0rem 0rem;
+    }
 
 .separator {
     border: 1px solid #FF2E63;
-
 }
 
 .About-Event {
@@ -273,19 +274,8 @@ button:focus {
 
 .Event-Details-Sec-Right {
     width: 30%;
-
 }
 
-.Reserve-btn {
-    position: sticky;
-    top: 20px;
-    z-index: 999;
-    border-radius: 1rem;
-    border: 2px solid #fff;
-    /* Adjust to match your design */
-    padding: 1rem;
-    /* Adjust as needed */
-}
 
 
 .countInput {
@@ -297,69 +287,69 @@ button:focus {
     border-radius: 10px;
 }
 
-.countInput button {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-    background-color: #ffffff;
-    color: #FE2E62;
-    /* Update button color */
-    border: none;
-    cursor: pointer;
-}
+    .countInput button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        background-color: #ffffff;
+        color: #FE2E62;
+        /* Update button color */
+        border: none;
+        cursor: pointer;
+    }
 
-.countInput input {
-    width: 20px;
-    height: 30px;
-    text-align: center;
-    font-size: 16px;
-    padding: 0 5px;
-    background-color: #FE2E62;
-    border: none;
-    color: #ffffff;
-    /* Update number color */
-    appearance: none;
-    -moz-appearance: textfield;
-}
+    .countInput input {
+        width: 20px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        padding: 0 5px;
+        background-color: #FE2E62;
+        border: none;
+        color: #ffffff;
+        /* Update number color */
+        appearance: none;
+        -moz-appearance: textfield;
+    }
 
-.countInput input::-webkit-inner-spin-button,
-.countInput input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+        .countInput input::-webkit-inner-spin-button,
+        .countInput input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
 
-.countInput input:focus {
-    outline: none;
-    border-color: #ffffff;
-}
+        .countInput input:focus {
+            outline: none;
+            border-color: #ffffff;
+        }
 
-.countInput button:hover {
-    background-color: #d3d3d3;
-}
+    .countInput button:hover {
+        background-color: #d3d3d3;
+    }
 
-.countInput .minus {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-radius: 10px 0px 0px 10px;
-    margin: 0px 0px 0px 2px;
-}
+    .countInput .minus {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-radius: 10px 0px 0px 10px;
+        margin: 0px 0px 0px 2px;
+    }
 
-.countInput .plus {
-    border-top-left-radius: 0;
-    border-radius: 0px 10px 10px 0px;
-    margin: 0px 2px 0px 0px;
-    border-bottom-left-radius: 0;
-}
+    .countInput .plus {
+        border-top-left-radius: 0;
+        border-radius: 0px 10px 10px 0px;
+        margin: 0px 2px 0px 0px;
+        border-bottom-left-radius: 0;
+    }
 
 .info-reserve {
     display: flex;
     justify-content: space-between;
 }
 
-.info-reserve p {
-    font-size: 10pt;
-    width: 60%;
-}
+    .info-reserve p {
+        font-size: 10pt;
+        width: 60%;
+    }
 
 .Reserve-A-Spot button {
     padding: 0.5rem;
@@ -378,5 +368,120 @@ button:focus {
         bottom: 0;
         left: 0;
         width: 100%;
+        background-color:#FE2E62;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+}
+@media (min-width: 767px) {
+    .Reserve-btn {
+        position: sticky;
+        top: 20px;
+        z-index: 999;
+        border-radius: 1rem;
+        border: 2px solid #fff;
+        /* Adjust to match your design */
+        padding: 1rem;
+        /* Adjust as needed */
+    }
+}
+
+
+
+/* Your existing CSS */
+
+@media (max-width: 767px) {
+
+    /* Apply responsive styles for mobile screens */
+
+    .EventInfo {
+        margin: 0rem 2rem;
+    }
+
+    .Title-CTA {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .Title-Date,
+    .WAW-Content,
+    .Speakers-grid,
+    .Event-Details-Sec-2 {
+        flex-direction: column;
+   
+    }
+
+    .Event-Details-Sec-Left {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .Title-Date h1 {
+        font-size: 20pt;
+    }
+
+    .Title-Date h3 {
+        font-size: 12pt;
+    }
+
+    .Followers-Sec,
+    .WAW-sup-sec,
+    .Speaker {
+        
+        align-items: flex-start !important;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    
+
+    .WAW-sec h2,
+    .Speakers-sup-sec h2 {
+        font-size: 16pt;
+    }
+
+    .WAW-sup-sec-txt {
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .separator {
+        margin: 1rem 0;
+    }
+
+    .Event-Details-Sec-Right {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .Reserve-btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info-reserve {
+        flex-direction: column;
+     
+    }
+
+    .Thumbnail img{
+        height:200px;
+        width: 290px;
+
+    }
+
+    .info-reserve p {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .Reserve-A-Spot {
+        margin-top: 1rem;
     }
 }

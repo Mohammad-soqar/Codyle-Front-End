@@ -56,7 +56,7 @@
 
         <div class="welcomegrid">
             <div class="main-photo">
-                <img class="weclomephoto" src="/Photos/welcomeRoadmaps.webp" alt="Roadmap page" height="400"
+                <img class="weclomephoto" src="Photos/welcomeRoadmaps.webp" alt="Roadmap page" height="400"
                     draggable="false">
             </div>
             <div class="heading">
@@ -138,7 +138,7 @@
     <section class="footerSection">
         <footer class="footer">
             <div class="logoInfo">
-                <img alt="Codyle" src="/Photos/Logo.png" height="60px" draggable="false">
+                <img alt="Codyle" src="Photos/Logo.png" height="60px" draggable="false">
                 <p>Codyle makes it easy __ all in one platform! It is a platform where business owners, business
                     starters,
                     university students and technology enthusiasts meet.</p>
@@ -166,19 +166,19 @@
 
                 <div class="SocialmediaIcons">
  <a href="https://www.linkedin.com/company/codyle/" target="_blank"> <img alt="Codyle Instegram"
-              src="/Photos/socialMedia/LinkedIn.png" height="25px" draggable="false"></a>
+              src="Photos/socialMedia/LinkedIn.png" height="25px" draggable="false"></a>
                     <a href="https://www.instagram.com/codyle_official/" target="_blank"> <img alt="Codyle Instegram"
-                            src="/Photos/socialMedia/Instegram2.png" height="30px" draggable="false"></a>
+                            src="Photos/socialMedia/Instegram2.png" height="30px" draggable="false"></a>
 
 
                     <a href="https://twitter.com/CodyleOfficial" target="_blank"> <img alt="Codyle Twitter"
-                            src="/Photos/socialMedia/Twitter2.png" height="34px" draggable="false"></a>
+                            src="Photos/socialMedia/Twitter2.png" height="34px" draggable="false"></a>
 
                     <a href="https://youtube.com/@codyle" target="_blank"> <img alt="Codyle Youtube"
-                            src="/Photos/socialMedia/Youtube2.png" height="34px" draggable="false"> </a>
+                            src="Photos/socialMedia/Youtube2.png" height="34px" draggable="false"> </a>
 
                     <a href="https://www.tiktok.com/@_codyle" target="_blank"> <img alt="Codyle Tiktok"
-                            src="/Photos/socialMedia/TikTok.png" height="34px " draggable="false"></a>
+                            src="Photos/socialMedia/TikTok.png" height="34px " draggable="false"></a>
                 </div>
 
             </div>
@@ -188,7 +188,30 @@
                 asp-action="Privacy">
                 Privacy Policy</a></p>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="services-version2.js"></script>
   <script src="js/show-on-scroll.js"></script>
+  <script src="balls.js"></script>
+  <script>
+    $(document).ready(function () {
+      var ballsContainer = $('#balls-container');
+
+      for (var i = 0; i < numBalls; i++) {
+        var ball = $('<div class="ball"></div>');
+        ballsContainer.append(ball);
+
+        var xPos = Math.floor(Math.random() * $(window).width());
+        var yPos = Math.floor(Math.random() * $(window).height());
+        var angle = Math.random() * 360;
+
+        ball.css({
+          left: xPos + 'px',
+          top: yPos + 'px',
+          transform: 'rotate(' + angle + 'deg)'
+        });
+      }
+    });
+  </script>
 
 </body>
 

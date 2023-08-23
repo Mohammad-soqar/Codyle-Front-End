@@ -6,7 +6,7 @@
 
 
 body {
-    background-image: url("/Photos/Mainpage.jpg") !important;
+    background-image: url("Photos/Mainpage.jpg") !important;
 }
 
 .office {
