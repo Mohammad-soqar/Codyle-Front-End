@@ -1,190 +1,246 @@
-<!DOCTYPE html>
-
-<html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="Photos/Icons/websiteicon.png">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Visual Communication</title>
-    <meta name="description" content="Visual Communication">
+    <link rel="stylesheet" href="EventDetails.css" asp-append-version="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="EventDetails.css">
+    <meta charset="utf-8" />
+    <title>@Model.</title>
+    <meta name="description" content="@Model.ShoppingCart.Event.Title">
+    <meta name="keywords" content="Bootcamps, Event, Events">
 </head>
 
-<body>
+<input hidden asp-for="@Model.ShoppingCart.EventId" />
+<div class="Event-Details">
 
-    <!-- Nav-bar -->
-    <header>
-    <nav class="nav">
-        <a href="index.html" class="logolink"><img alt="Codyle" src="Photos/Logo.png" height="60px" draggable="false"></a>
+    <div class="Thumbnail">
+        <img src="@Model.ShoppingCart.Event.Thumbnail" height="450px" alt="@Model.ShoppingCart.Event.Title" draggable="false">
+    </div>
 
-        <ul class="navGlinks">
-            <li class="navlinks"><a href="Events.html">Events</a></li>
-            <li class="navlinks"><a href="Services.html">Services</a></li>
-            <li class="navlinks"><a href="Roadmaps.html">RoadMaps</a></li>
-            <li class="navlinks"><a href="Blog.html">Blogs</a></li>
-            <li class="navlinks"><a href="CSC.html">CSC</a></li>
-            <li class="navlinks"><a href="AboutUs.html">About us</a></li>
-        </ul>
+    <div class="EventInfo">
+        <div class="Title-CTA">
+            <div class="Title-Date">
+                <h3>
+                     <p>18/04/2024</p>
+                   
+                </h3>
+                <h1>@Model.ShoppingCart.Event.Title</h1>
+            </div>
+            <div class="CTA-BTN">
 
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul id="mobile-menu" class="mobile-menu">
-                <li><a href="Events.html">Events</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Roadmaps.html">RoadMaps</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="CSC.html">CSC</a></li>
-                <li><a href="AboutUs.html">About us</a></li>
-            </ul>
-        </div>
-    </nav>
+                <button class="like-button" data-eventid="@Model.ShoppingCart.EventId" onclick="">
+                    <img src="~/Photos/Like.png" alt="like btn">
+                </button>
 
-    <script src="site.js"></script>
-</header>
-    <!-- Nav-bar -->
-
-    <form method="post" class="EventForm">
-        <input hidden asp-for="EventId" />
-        <div class="event">
-
-            <div>
-                <img class="eventpic" src="Photos/events/s.png" style="border-radius: 14px;" alt="@Model.Event.Title"
-                    draggable="false">
+                <button><img src="~/Photos/share.png" alt="share btn"></button>
             </div>
 
-            <div class="eventwriting">
-
-                <h1 style="font-size:20pt ;">Visual Communication</h1>
-
-                <div class="date">
-                    <img class="dateimg" src="Photos/date2.png" height="18px" alt="date image" draggable="false">
-                    <p>04/01/2022 Wed 13:30 - 15:30 </p>
-                </div>
-
-                <div>
-                    <h2 style="font-size:12pt ; margin:10px 0px 5px 0px ">
-                        <img class="dateimg" src="Photos/location2.png" height="18px" alt="date image"
-                            draggable="false">
-                        Usukdar University Merkez A-Block 205
-                    </h2>
-
-                    <a target="_blank" href="@Model.Event.LocationUrl">show on map</a>
-                </div>
-
-
-                <!--<p>Price: @Model.Event.Price TL</p>-->
-
-                <p>Price: Free!</p>
-
-
-                <div class="ticket">
-                    <!--   @if(Model.Event.Finished == "Yes"){-->
-                    <a target="_blank"
-                        href="https://docs.google.com/presentation/d/144wWokug9AQcQTtfpo1zzubSv97dJJeb/edit?usp=share_link&ouid=104560974567666509082&rtpof=true&sd=true"
-                        style="margin-top:5px;">Download Slides</a>
-
-                    <!--   }
-                    else
-                    {
-                    if (Model.Event.Price > 0)
-                    { -->
-                    <!-- <button type="submit" class="ticket" href="#" value="book a ticket">Buy a ticket</button> -->
-                    <!--  }
-                    else if (Model.Event.Price == 0)
-                    { -->
-                    <!-- <a class="ticket" asp-controller="Home" asp-action="ReserveASeat" asp-area="User">Reserve a
-                        seat!</a> -->
-
-                    <!-- }
-                    } -->
-
-
-                    <!-- @if (Model.Event.Price > 0)
-                    { -->
-                    <!-- <input type="number" asp-for="Count" class="tickett"> -->
-                    <!-- }
-                    else if (Model.Event.Price == 0)
-                    {
-
-                    } -->
-
-                </div>
-
-            </div>
         </div>
 
-        <div class="eventdetails">
+        <div class="Event-Details-Sec-2">
+            <!-- Left Side -->
+            <div class="Event-Details-Sec-Left">
 
-            <p>Visual communication is the use of visual components to communicate information and ideas. In this event,
-                we will introduce you to the general concept of UI/UX design and why you should have it in your skill
-                set regardless to your field.</p>
+              
+
+
+                <div class="WAW-sec">
+                    <h2>When And Where</h2>
+                    <div class="WAW-Content">
+                        <div class="WAW-sup-sec">
+                            <img src="~/Photos/dateevent.png" alt="">
+
+                            <div class="WAW-sup-sec-txt">
+                                <h3>Date & Time:</h3>
+                                <p>@Model.ShoppingCart.Event.StartDate</p>
+                            </div>
+
+                        </div>
+                        <div class="separator">
+                        </div>
+                        <div class="WAW-sup-sec">
+                            <img src="~/Photos/locationevent.png" alt="">
+
+                            <div class="WAW-sup-sec-txt">
+                                <h3>Location:</h3>
+                                <a target="" href="@Model.ShoppingCart.Event.LocationUrl"><p>@Model.ShoppingCart.Event.Location</p></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="WAW-sec About-Event">
+                    <h2>About This Event:</h2>
+                    <div class="WAW-Content">
+                        <div class="WAW-sup-sec">
+                            <img src="~/Photos/Durationevent.png" alt="">
+
+                            <div class="WAW-sup-sec-txt">
+                                <h3>
+                                    <p>18/04/2024</p>
+                                </h3>
+                            </div>
+
+                        </div>
+                        <div class="separator">
+                        </div>
+                        <div class="WAW-sup-sec">
+                            <img src="~/Photos/Eticketevent.png" alt="">
+
+                            <div class="WAW-sup-sec-txt">
+                                <h3>Mobile eTicket</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Speakers-sup-sec">
+                    <h2>Speakers</h2>
+                    <div class="Speakers-grid">
+                          @foreach (var Speaker in Model.Speaker)
+                          { 
+                        <a class="Speaker">
+                            <img src="@Speaker.ImageUrl" style="border-radius:50%;" height="35px" width="35px" alt="">
+                                <span>@Speaker.Name</span>
+                        </a>
+                           }                   
+                    </div>
+                </div>
+
+                <p>
+                    @Html.Raw(Model.ShoppingCart.Event.Description)
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="Event-Details-Sec-Right">
+                <div class="Reserve-btn">
+                    <div class="info-reserve">
+                        <p>THE EVENT TITLE THE EVENT TITLE</p>
+                        <div class="countInput">
+                         
+                        </div>
+                    </div>
+
+                    <div class="Reserve-A-Spot">
+                        
+                            <button class="default-CTA-btn">Reserve A Spot</button>
+
+                        
+
+
+                    </div>
+                </div>
+            </div>
 
 
 
         </div>
-    </form>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<script>
+    function likeEvent(eventId) {
+        console.log(eventId);
+
+        // Send an AJAX request to the server
+        $.ajax({
+            url: '/User/Home/LikeEvent',
+            type: 'POST',
+            data: { eventId: eventId },
+            success: function () {
+     
+                // Update the button's appearance
+                var likeButton = $('.like-button[data-eventid="' + eventId + '"]');
+                likeButton.find('img').attr('src', '@Url.Content("~/Photos/Liked.png")');
+
+                likeButton.attr('disabled', 'disabled');
+            },
+            error: function (xhr) {
+                // Handle the error response
+                if (xhr.status === 401) {
+                    // Redirect to the login page if user is not logged in (status code 401)
+                    window.location.href = '/Identity/Account/Login'; // Replace this with the actual URL of your login page
+                } else {
+                    // Handle other errors
+                    alert('An error occurred while liking the event.');
+                }
+            }
+        });
+    }
+
+</script>
 
 
+<script>
+    $(document).ready(function () {
+        var ballsContainer = $('#balls-container');
+
+        for (var i = 0; i < numBalls; i++) {
+            var ball = $('<div class="ball"></div>');
+            ballsContainer.append(ball);
+
+            var xPos = Math.floor(Math.random() * $(window).width());
+            var yPos = Math.floor(Math.random() * $(window).height());
+            var angle = Math.random() * 360;
+
+            ball.css({
+                left: xPos + 'px',
+                top: yPos + 'px',
+                transform: 'rotate(' + angle + 'deg)'
+            });
+        }
+    });
 
 
-    <section class="footerSection">
-        <footer class="footer">
-            <div class="logoInfo">
-                <img alt="Codyle" src="Photos/Logo.png" height="60px" draggable="false">
-                <p>Codyle makes it easy __ all in one platform! It is a platform where business owners, business
-                    starters,
-                    university students and technology enthusiasts meet.</p>
-            </div>
+    $(document).ready(function () {
+        const reserveButton = $('.Reserve-btn');
+        const eventDetails = $('.Event-Details');
+        const eventInfo = $('.EventInfo');
+        const eventInfoOffsetTop = eventInfo.offset().top;
+        const eventInfoHeight = eventInfo.outerHeight();
 
-            <div class="footer-heading footer-1">
-                <h2>Links</h2>
+        const updateReserveButtonPosition = () => {
+            const scrollPosition = $(window).scrollTop();
 
-                <a href="Services.html"> Services </a>
-                <a href="Roadmaps.html"> Roadmaps </a>
-                <a href="Blog.html"> Blogs </a>
+            if (scrollPosition >= eventInfoOffsetTop && scrollPosition < eventInfoOffsetTop + eventInfoHeight) {
+                reserveButton.addClass('sticky');
+            } else {
+                reserveButton.removeClass('sticky');
+            }
+        };
 
-            </div>
+        // Initial position check
+        updateReserveButtonPosition();
 
-            <div class="footer-heading footer-2">
-                <h2>Explore</h2>
+        // Update position on scroll
+        $(window).scroll(updateReserveButtonPosition);
+    });
 
-                <a href="Events.html">Events</a>
-                <a href="AboutUs.html"> About us </a>
-                <a href="CSC.html">Codyle Student CLub</a>
-            </div>
+    $(document).ready(function () {
+        $('.decrease-btn').on('click', function () {
+            var input = $(this).siblings('input');
+            var currentValue = parseInt(input.val());
+            if (currentValue > 1) {
+                input.val(currentValue - 1);
+            }
+        });
 
-            <div class="footer-heading footer-3">
-                <h2>Contacts</h2>
+        $('.increase-btn').on('click', function () {
+            var input = $(this).siblings('input');
+            var currentValue = parseInt(input.val());
+            if (currentValue < 2) {
+                input.val(currentValue + 1);
+            }
+        });
+    });
 
-                <div class="SocialmediaIcons">
- <a href="https://www.linkedin.com/company/codyle/" target="_blank"> <img alt="Codyle Instegram"
-              src="Photos/socialMedia/LinkedIn.png" height="25px" draggable="false"></a>
-                    <a href="https://www.instagram.com/codyle_official/" target="_blank"> <img alt="Codyle Instegram"
-                            src="Photos/socialMedia/Instegram2.png" height="30px" draggable="false"></a>
 
-
-                    <a href="https://twitter.com/CodyleOfficial" target="_blank"> <img alt="Codyle Twitter"
-                            src="Photos/socialMedia/Twitter2.png" height="34px" draggable="false"></a>
-
-                    <a href="https://youtube.com/@codyle" target="_blank"> <img alt="Codyle Youtube"
-                            src="Photos/socialMedia/Youtube2.png" height="34px" draggable="false"> </a>
-
-                    <a href="https://www.tiktok.com/@_codyle" target="_blank"> <img alt="Codyle Tiktok"
-                            src="Photos/socialMedia/TikTok.png" height="34px " draggable="false"></a>
-                </div>
-
-            </div>
-
-        </footer>
-        <p class="copyrights">© All Rights Reserved. CODYLE<a href="Privacy.html">Privacy Policy</a></p>
-    </section>
-
-</body>
-
-</html>
+</script>
