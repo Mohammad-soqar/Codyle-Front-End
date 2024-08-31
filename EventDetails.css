@@ -379,19 +379,15 @@ button:focus {
         z-index: 999;
         border-radius: 1rem;
         border: 2px solid #fff;
-        /* Adjust to match your design */
         padding: 1rem;
-        /* Adjust as needed */
     }
 }
 
 
 
-/* Your existing CSS */
 
 @media (max-width: 767px) {
 
-    /* Apply responsive styles for mobile screens */
 
     .EventInfo {
         margin: 0rem 2rem;
